@@ -1,0 +1,8 @@
+h1{
+    border: 10px dashed black;
+  padding: 25px;
+  background: url(paper.gif);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  text-align: center;
+}
