@@ -1,8 +1,143 @@
-h1{
-    border: 10px dashed black;
-  padding: 25px;
-  background: url(paper.gif);
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  text-align: center;
+@charset "UTF-8";
+
+.brrinf{
+  position: absolute;
+width: 1080px;
+height: 282px;
+left: 0px;
+top: 0px;
 }
+
+img{
+  position: absolute;
+width: 150px;
+height: 150px;
+left: 67px;
+top: 41px;
+
+border: 1px solid #000000;
+border-radius: 100px;;
+}
+
+.folha{
+  position: absolute;
+  width: 679px;
+  height: 1132px;
+  left: 350px;
+  top: 141px;
+
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.nome{
+  position: absolute;
+width: 500px;
+height: 50.28px;
+left: 403.3px;
+top: 150px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+
+color: #000000;
+}
+.t1{
+  position: absolute;
+width: 144px;
+height: 34px;
+left: 391px;
+top: 300px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 0px;
+
+color: #000000;
+}
+.p1{
+  position: absolute;
+width: 613px;
+height: 24px;
+left: 388px;
+top: 340px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.t2{
+  position: absolute;
+width: 144px;
+height: 34px;
+left: 391px;
+top: 400px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 0px;
+
+color: #000000;
+}
+
+.p2{
+  position: absolute;
+width: 613px;
+height: 24px;
+left: 388px;
+top: 450px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+
+.t3{
+  position: absolute;
+width: 144px;
+height: 34px;
+left: 391px;
+top: 830px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 0px;
+
+color: #000000;
+}
+
+.p3{
+  position: absolute;
+  width: 613px;
+  height: 24px;
+  left: 388px;
+  top: 850px;
+  
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  
+  color: #000000;
+}
+.t4
