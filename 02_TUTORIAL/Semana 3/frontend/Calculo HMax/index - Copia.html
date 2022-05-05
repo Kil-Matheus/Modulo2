@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />	
+	<title>Etapa 3</title>
+</head>
+<body>
+<h1>Altura Máxima</h1>
+<h2>Introdução a Javascript</h2>
+	<div>
+		<h3>PARTE 1 - Cálculos</h3>
+		<p>O princípio dessa calculo é encontrar o momento em que a velocidade não atua mais sobre um corpo.<br> Por Exemplo:</br>
+Quando jogamos um objeto para cima, a força da gravidade vai diminuindo a sua velocidade até ela se torne nula e invertar o sentido.:</p> <br>
+		<label>Valor 1:
+			<input type="text" name="valor1" id="velocidadeI" ><br>
+		</label>
+	</div>
+	<button onclick="calcularvelocidade()">Calcular</button>
+	<div>	<span id="m"></span><br> <br>
+		<span id="t"></span></div>
+
+</body>
+	<script>
+		var velIni = document.querySelector("#velocidadeI")
+		var gravidade = 10
+		var metros = document.querySelector("#m")
+		var temp = document.querySelector("#t")
+
+		function calcularvelocidade() {
+			var tempo = parseInt(velIni.value)/gravidade;
+			var hmax = parseInt(velIni.value ** 2)/ parseInt(2*gravidade);
+			metros.innerHTML = String("Altura Máxima= ") + hmax
+			temp.innerHTML = String("Tempo = ") + tempo
+		}
+	</script>
+
+</html>
