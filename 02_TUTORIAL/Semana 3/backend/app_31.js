@@ -6,5 +6,5 @@ const port = 3031;
 app.use(express.static("../frontend/"));
 
 app.listen(port, hostname, () => {
-  console.log('Server running at hhtp://${hostname}:${port}/');
+  console.log('Server running at http://${hostname}:${port}/');
 });
