@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+
+<body>
+    <H1>Exercico 3</H1>
+    <p>Crie uma página web que permita ao usuário informar uma string correspondente a uma lista de números inteiros na qual os elementos são separados por uma vírgula e qual dos valores é o valor-foco. Quando o usuário indicar que deseja que o cálculo seja realizado (pressionar um botão), mostre a lista ordenada de forma crescente e qual a posição (primeiro, segundo, terceiro etc) do valor-foco. Use um algoritmo de ordenação (mesmo que um simples, como o Bubble Sort) para ordenar a lista e use a busca binária para identificar a posição do valor-foco.</p>
+
+    <div>
+        <label>Digite seus números separados por virgula
+            <input type="text" name="valor1" id="valor1">
+        </label>
+        
+        <label>Valor foco
+            <input type="text" name="valor2" id="valor2">
+        </label>
+        
+        <button onclick="ordem()">Ordernar</button>
+    </div>
+    <span id="res1"></span>
+    <br>
+    <span id="res2"></span>
+
+        <script>
+            function ordem(){
+            let campo1 = document.getElementById("res1")
+            let campo2 = document.getElementById("res2")
+            let input2 = String(document.getElementById("valor2").value)
+            let valor = String(document.getElementById("valor1").value)
+            let Tarray = valor.split(",")
+            Tarray.sort();
+            console.log(Tarray)
+            campo1.innerHTML = Tarray
+            if(Tarray.includes(input2)){
+            let resu2 = Tarray.indexOf(input2)
+            campo2.innerHTML = resu2
+            }
+            else{
+                console.log("Deu ruim")
+                campo2.innerHTML = "Deu Ruim"
+            }
+            }
+        </script>
+    </body>
+</html>

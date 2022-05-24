@@ -12,3 +12,4 @@ Minhas entregas estão definidas aqui:
 <a href="https://github.com/Intelihub/Template_Aluno/blob/main/03_EX_OBRIGATORIOS/Coloque%20aqui%20entregas%20de%20exerc%C3%ADcios%20obrigat%C3%B3rios.rtf"> 19/04/2022 - Entrega 1 </a>
 -Entrega Exercício 1/3 - Resolução de problemas com algoritmos semana 5 - 19/05/2022 <a href=../Modulo2\04_AUT_EST_EX_OBRIGATORIOS\Semana5>
 -Entrega Exercício 2/3 - Resolução de problemas com algoritmos semana 5 - 21/05/2022 <a href=../Modulo2\04_AUT_EST_EX_OBRIGATORIOS\Semana5>
+-Entrega Exercício 3/3 - Resolução de problemas com algoritmos semana 5 - 24/05/2022 <a href=../Modulo2\04_AUT_EST_EX_OBRIGATORIOS\Semana5>
