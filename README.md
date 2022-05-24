@@ -6,7 +6,7 @@ Minhas entregas estão definidas aqui:
 -Entrega do AutoEstudo - Etapa 5 do tutorial - 19/05/2022 <a href="../GitHub\Modulo2\02_TUTORIAL\Semana 5\backend">
 -Entrega Currículo Atualizado com Jquery - Exercício de personalização da Etapa 4 - 19/05/2022
     *Um botão que quando você clica nele, acontece um evento e a linha some. <a href="../Modulo2\03_AUT_EST_ENTREGA\Semana 5">
-
+-Entrega do AutoEstudo - Etapa 6 do tutorial - 23/05/2022 <a href="../GitHub\Modulo2\02_TUTORIAL\Semana 6\backend">
 
 ## Obrigatórios
 <a href="https://github.com/Intelihub/Template_Aluno/blob/main/03_EX_OBRIGATORIOS/Coloque%20aqui%20entregas%20de%20exerc%C3%ADcios%20obrigat%C3%B3rios.rtf"> 19/04/2022 - Entrega 1 </a>
