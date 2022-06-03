@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+<body>
+    <h1>Exercício 2</h1>
+    <p>Crie uma página web na qual o usuário possa digitar dois valores, cada um em uma caixa de texto. Quando o usuário indicar que deseja que os valores sejam trocados (clicando no botão "Troca"), os valores contidos nas caixas de texto são trocados, ou seja, se na primeira caixa de texto estiver escrito "IPT" e na segunda, "Inteli", quando solicitada a troca, a primeira caixa de texto deve contar "IPT" e a segunda, "Inteli".</p>
+
+    <div>
+        <input type="email" name="t1" id="t1">
+        <button onclick="troca()">⇆</button>
+        <input type="text" name="t2" id="t2">
+    </div>
+    <!-- Lógica do Script é ele pegar o valor de um campo e 'colar' no outro, e é feito a mesma coisa com o segundo campo. -->
+<script>
+    function troca() {
+
+        var text1 = String(document.getElementById("t1").value);
+        var text2 = String(document.getElementById("t2").value);
+        document.getElementById("t1").value = text2;
+        document.getElementById("t2").value = text1; 
+    }
+</script>
+</body>
+</html>

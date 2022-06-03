@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerício 1</title>
+</head>
+<body>
+    <h1>Exercíco 1</h1>
+    <p>Crie uma página web na qual o usuário possa informar a quantidade de um produto em um valor inteiro e, por meio de dois botões, um que adiciona uma unidade e um que subtraia uma unidade, o valor do campo da quantidade possa ser manipulado.</p>
+
+    <div>
+        <input type="text" name="v1" id="v1">
+        <button onclick="soma()">Somar +1</button>
+        <button onclick="subt()">Subritrair -1</button>
+    </div>
+    <script>
+        var n = document.getElementById("v1");
+        
+        function soma(){
+            var inteiro = parseInt(n.value);
+            let soma = inteiro + 1;
+            n.value = soma;
+        }
+
+        function subt() {
+            var inteiro = parseInt(n.value);
+            let subt = inteiro - 1;
+            n.value = subt;
+        }
+    </script>
+</body>
+</html>
