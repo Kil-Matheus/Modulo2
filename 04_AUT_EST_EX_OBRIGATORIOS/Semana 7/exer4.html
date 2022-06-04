@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+    <p>Crie uma página web que permita ao usuário informar a quantidade de pessoas (número inteiro inteiro) e o período (Noturno ou Diurno) e, quando o usuário indicar que deseja que o cálculo seja realizado (pressionar um botão), mostre o total da compra de acordo com as condições abaixo:</p>
+    <h2>Condições</h2>
+    <p>
+        Se vôo diurno, 200 por pessoa. Se mais do que 50 pessoas, desconto de 40% por pessoa.<br>
+        Se vôo noturno, 100 por pessoa. Se mais do que 50 pessoas, desconto de 20% por pessoa.
+    </p>
+<div>
+        <input type="number" id="n" placeholder="Quantas pessoas estam alocadas para este vôo?" autofocus style="width: 300px;"><br>
+            <select name="op" id="op">
+                <option value="diurno">Diurno</option>
+                <option value="noturno">Noturno</option>
+            </select>
+        <button onclick="ready()">Calcular</button>
+        <p id="pay"></p>
+</div>
+    <script>
+        function ready(){
+            var selec = document.getElementById("op").value;
+            var entrada = document.getElementById("n");
+            var people = parseInt(entrada.value);
+            var d = 200;
+            var n = 100;
+            var desc = 0;
+            var res = 0
+                if(selec == "diurno" && people >= 50) {
+                    desc = d * .4;
+                    res = d - desc;
+                    document.getElementById("pay").innerHTML = "O valor do desconto de 40% é de R$" + desc + " , e o valor final da sua passagem é de R$" + res + " por superar o valor mínimo de 50 pessoas por vôo";
+                }
+                else if (selec == "diurno" && people <= 50) {
+                    document.getElementById("pay").innerHTML = "Não podemos aplicar um desconto na sua passagem pois não atendemos o número mínimo de passageiros nessa viagem, logo o valor total de sua passagem é de R$" + d;
+                }
+                else if (selec == "noturno" && people >= 50) {
+                    desc = n * .2;
+                    res = n - desc;
+                    document.getElementById("pay").innerHTML = "O valor do desconto de 20% é de R$" + desc + " , e o valor final da sua passagem é de R$" + res + " por superar o valor mínimo de 50 pessoas por vôo";
+                }
+                else if (selec == "noturno" && people <= 50) {
+                    document.getElementById("pay").innerHTML = "Não podemos aplicar um desconto na sua passagem pois não atendemos o número mínimo de passageiros nessa viagem, logo o valor total de sua passagem é de R$" + n;
+                }
+            }
+    </script>
+</body>
+</html>
