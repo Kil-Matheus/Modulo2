@@ -9,7 +9,7 @@ Minhas entregas estão definidas aqui:
 -Entrega do AutoEstudo - Etapa 6 do tutorial - 23/05/2022 <a href="../GitHub\Modulo2\02_TUTORIAL\Semana 6\backend">
 -Entrega Currículo Atualizado com Banco de dados - Crie o banco de dados com as informações do seu currículo e faça uma chamada get que mostre ao menos um registro do banco criado - entrega no seu Github pessoal - 26/05/2022  <a href="../Modulo2\03_AUT_EST_ENTREGA\Semana 6">
 -Entrega CUrrículo Atualizado com EndPoints - (Exercício de personalização da Etapa 6)Crie todos os endpoints para CRUD para o projeto do seu currículo - entrega no seu Github pessoal - 03/06/2022 - <a href="../Modulo2\03_AUT_EST_ENTREGA\Semana 7">
-
+- Entrega currículo Atualizado com AJAX -  Exercício de personalização da Etapa 7 - 12/06/2022  <a href="../Modulo2\03_AUT_EST_ENTREGA\Semana 8">
 
 ## Obrigatórios
 <a href="https://github.com/Intelihub/Template_Aluno/blob/main/03_EX_OBRIGATORIOS/Coloque%20aqui%20entregas%20de%20exerc%C3%ADcios%20obrigat%C3%B3rios.rtf"> 19/04/2022 - Entrega 1 </a>

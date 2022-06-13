@@ -11,6 +11,12 @@ var getDBResDiv = "#getDB";
 
 /* 
 =======================
+Funções
+======================= 
+*/
+
+/* 
+=======================
 Event Listener
 =======================
 */
@@ -23,14 +29,6 @@ $(document).ready( function() {
     var x0 = 10, y0 = 20;
     CalcAddAndShow(x0, y0);
 });
-
-
-
-/* 
-=======================
-Funções
-======================= 
-*/
 
 /* Função que calcula uma soma e mostra a operação realizada e o resultado obtido */
 function CalcAddAndShow(x, y){
@@ -62,7 +60,8 @@ function ShowResult(res){
     $(calcResDiv).append(res);
 }
 
-/* Função que faz uma requisição GET */
+
+/* Função que faz um requisição GET */
 function TestGET(){
     var url = "https://jsonplaceholder.typicode.com/todos/1";
 
@@ -71,11 +70,11 @@ function TestGET(){
     xhttp.send();//A execução do script pára aqui até a requisição retornar do servidor
 
     $(getResDiv).append("<br />" + xhttp.responseText);
-    $(getResDiv).append("<br />Seleção do <i>title</i>: " + JSON.parse(xhttp.response).title);
+    $(getResDiv).append("<br />" + xhttp.responseText.title);
     //console.log(xhttp.responseText);
 }
 
-/* Função que faz uma requisição GET */
+/* Função que faz um requisição GET no nosso banco de dados */
 function TestGETDB(){
     var url = "http://127.0.0.1:3071/users";
     var resposta;

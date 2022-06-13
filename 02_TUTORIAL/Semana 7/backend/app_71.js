@@ -1,11 +1,11 @@
-const express = require('express'); //instância
+const express = require('express'); 
 const bodyParser = require('body-parser');
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const sqlite3 = require('sqlite3').verbose();
 const DBPATH = 'dbUser.db';
 
-const hostname = '127.0.0.1'; //Localhost
+const hostname = '127.0.0.1';
 const port = 3071;
 const app = express();
 
@@ -26,12 +26,12 @@ app.get('/users', (req, res) => {
 	res.setHeader('Access-Control-Allow-Origin', '*'); // Isso é importante para evitar o erro de CORS
 
 	var db = new sqlite3.Database(DBPATH); // Abre o banco
-  var sql = 'SELECT * FROM tbUser ORDER BY title COLLATE NOCASE'; //Comando para executar em SQL.
+  var sql = 'SELECT * FROM tbUser ORDER BY title COLLATE NOCASE';
 	db.all(sql, [],  (err, rows ) => {
 		if (err) {
 		    throw err;
 		}
-		res.json(rows); // Após a execução, pegue a resposta, transforme em Json e devolva
+		res.json(rows);
 	});
 	db.close(); // Fecha o banco
 });
