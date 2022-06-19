@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <h1>Exercício 1</h1>
+    <p>Crie uma página web na qual o usuário informe um número inteiro de três dígitos e quando o usuário indicar que deseja que o cálculo seja realizado (pressionar um botão), seja exibido se o dígito da centena é par ou ímpar.</p>
+    <div>
+        <label>Digite um numero
+            <input type="text" id="vl1" placeholder="Até 3 dígitos" maxlength="3">
+    </div>
+    <button onclick="ver()">Verificar</button>
+    <p id="resultado"></p>
+    <script>
+        function ver() {
+            var v = Number(document.getElementById("vl1").value);
+            var i = v/100; //divido por 100 para pegar a a casa da dezena
+            var inteiro = parseInt(i); //Como o numero após a vírgula é irrelevante, eu transfome o numero real em inteiro, logo eu tenho o primero dígito.
+            if (inteiro%2 == 0 && v!= 0){
+                document.getElementById("resultado").innerHTML = "O primeiro numero é " + inteiro + " e ele é par";
+            }
+            else if (inteiro%2 == 1){
+                document.getElementById("resultado").innerHTML = "O primeiro numero é " + inteiro + " e ele é impar";
+            }
+            else if (inteiro == 0){
+                document.getElementById("resultado").innerHTML = "Segundo o site  " + " <a href='https://www.matematica.pt/faq/numero-par.php'>https://www.matematica.pt/faq/numero-par.php</a>" + ", zero pode ser considerado par pois a sua divisão retorna um numero inteiro, que é igual a 0";
+            }
+           
+        }
+    </script>
+</body>
+</html>

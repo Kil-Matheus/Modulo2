@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <h1>Exercício 3</h1>
+    <p>Crie uma página web na qual o usuário informe três nomes e quando o usuário indicar que deseja que o cálculo seja realizado (pressionar um botão), os nomes são exibidos em ordem alfabética crescente.</p>
+    <div>
+        <label>Informe três nomes, separados por uma vírgula e espaço.<br>
+            <input type="text" name="nome" id="nome" autofocus>
+        </label>
+    </div><br>
+    <button onclick="ordem()">Ordenar</button>
+    <br>
+    <p id="result"></p>
+<script>
+    //Função que ordena
+    function ordem(){
+        var nome = document.getElementById("nome").value;
+        var separado = nome.split(", "); // Função em que vai separar os dados pela vígula e armazenalos como uma Array.
+        var ordenar = separado.sort(); // Vai ordenar conforme o Alfabeto.
+        document.getElementById("result").innerHTML = ordenar; //Vai 'printar' o resultado.
+    }
+</script>
+</body>
+</html>

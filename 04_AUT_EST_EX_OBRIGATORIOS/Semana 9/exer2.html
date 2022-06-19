@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <h1>Exercício 2</h1>
+    <p>Crie uma página web na qual o usuário informe um número inteiro positivo e quando o usuário indicar que deseja que o cálculo seja realizado (pressionar um botão), seja exibida a soma de seus dígitos.</p>
+    
+    <div>
+        <label>Digite o valor 
+            <input type="text" id="v1">
+        </label>
+        <button onclick="calcular()">Calcular</button>
+        <p id="result"></p>
+    </div>
+    <script>
+    function calcular(){
+        var n = Number(document.getElementById("v1").value);
+        var soma = 0;
+
+    while (n > 0) {
+    resto = n % 10; //Este resultado vai pegar o "ultimo numero"
+    n = (n-resto)/10; //Vai zero o ultimo numero e vai dividir o restante por 10
+    soma = soma + resto;
+    }
+    document.getElementById("result").innerHTML = "A soma dos dígitos é igual há " + soma ;
+}
+    </script>
+    
+</body>
+</html>

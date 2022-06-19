@@ -17,3 +17,4 @@ Minhas entregas estão definidas aqui:
 -Entrega Exercício 2/3 - Resolução de problemas com algoritmos semana 5 - 21/05/2022 <a href=../Modulo2\04_AUT_EST_EX_OBRIGATORIOS\Semana5>
 -Entrega Exercício 3/3 - Resolução de problemas com algoritmos semana 5 - 24/05/2022 <a href=../Modulo2\04_AUT_EST_EX_OBRIGATORIOS\Semana5>
 -Entrega Exercício 4/5 - Resolução de problemas com algoritmos semana 7 - 04/06/2022 <a href=../Modulo2\04_AUT_EST_EX_OBRIGATORIOS\Semana7>
+-Entrega Exercício 4/5 - Resolução de problemas com algoritmos semana 8 - 04/06/2022 <a href=../Modulo2\04_AUT_EST_EX_OBRIGATORIOS\Semana8>
