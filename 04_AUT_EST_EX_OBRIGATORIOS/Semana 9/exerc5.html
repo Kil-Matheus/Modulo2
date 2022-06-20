@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <h1>Exercício 5</h1>
+    <p>Elabore um programa que, dados dois números naturais n1 e n2, representando um intervalo fechado [n1, n2], exibe todos os números primos no intervalo.Sem exercícios de programação obrigatórios para essa semana :)</p>
+    
+    <div>
+        <label>Digite 2 numeros separados por ", " para encontrar os primos entre essas frequência.
+            <input type="text" id="freq">
+        </label>
+    </div>
+    <br>
+    <button onclick="p()">Encontrar</button>
+<script>
+    function p(){
+        var n = document.getElementById("freq").value;
+        var num = n.split(", ");
+        num.sort((a,b) => a - b); //Ordena os numeros do menor para o maior
+        var vl1 = Number(num[0])
+        var vl2 = Number(num[1])
+        var list = [] 
+
+    for (var i = vl1; i <= vl2; i++) {
+        var int = 0
+
+        for (var e = 2; e < i; e++) { //Divide o numero de por 2 até o menor numero que foi "inputado"
+            
+            if (i % e == 0) {
+                int = 1
+                break
+            }
+        }
+
+        if (int == 0 && i > 1) {
+            list.push(i)
+        }  
+    }
+    alert(list)
+}
+
+</script>
+</body>
+</html>
