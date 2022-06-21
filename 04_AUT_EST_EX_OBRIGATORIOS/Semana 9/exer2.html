@@ -23,9 +23,9 @@
         var soma = 0;
 
     while (n > 0) {
-    resto = n % 10; //Este resultado vai pegar o "ultimo numero"
-    n = (n-resto)/10; //Vai zero o ultimo numero e vai dividir o restante por 10
-    soma = soma + resto;
+    resto = n % 10; //Este resultado vai pegar o "ultimo numero", que no caso, será a sobra.
+    n = (n-resto)/10; //Vai pegar o numero do input e vai subtrair pelo resto para zerar a ultima casa.
+    soma = soma + resto;// Aqui ele vai "salvar" o numero e vai somar com o restanto dos outros algarismos que vai ser separado pela função acima.
     }
     document.getElementById("result").innerHTML = "A soma dos dígitos é igual há " + soma ;
 }

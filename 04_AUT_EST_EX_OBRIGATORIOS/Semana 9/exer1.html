@@ -18,16 +18,16 @@
     <script>
         function ver() {
             var v = Number(document.getElementById("vl1").value);
-            var i = v/100; //divido por 100 para pegar a a casa da dezena
-            var inteiro = parseInt(i); //Como o numero após a vírgula é irrelevante, eu transfome o numero real em inteiro, logo eu tenho o primero dígito.
+            var i = v/100; //divido por 100 para pegar a casa da dezena
+            var inteiro = parseInt(i); //Como o numero após a vírgula é irrelevante, eu transfomo o numero real em inteiro, logo eu tenho o primero dígito.
             if (inteiro%2 == 0 && v!= 0){
-                document.getElementById("resultado").innerHTML = "O primeiro numero é " + inteiro + " e ele é par";
+                document.getElementById("resultado").innerHTML = "O primeiro numero é " + inteiro + " e ele é par"; //Se o resto da divisão for 0 e o input for diferente de 0. Faça essa linha
             }
             else if (inteiro%2 == 1){
-                document.getElementById("resultado").innerHTML = "O primeiro numero é " + inteiro + " e ele é impar";
+                document.getElementById("resultado").innerHTML = "O primeiro numero é " + inteiro + " e ele é impar"; //Senão, se o resto da divisão for diferente for 1, faça essa linha.
             }
             else if (inteiro == 0){
-                document.getElementById("resultado").innerHTML = "Segundo o site  " + " <a href='https://www.matematica.pt/faq/numero-par.php'>https://www.matematica.pt/faq/numero-par.php</a>" + ", zero pode ser considerado par pois a sua divisão retorna um numero inteiro, que é igual a 0";
+                document.getElementById("resultado").innerHTML = "Segundo o site  " + " <a href='https://www.matematica.pt/faq/numero-par.php'>https://www.matematica.pt/faq/numero-par.php</a>" + ", zero pode ser considerado par pois a sua divisão retorna um numero inteiro, que é igual a 0"; //Senão, se o input for igual há 0, east egg sobre o numero 0.
             }
            
         }
